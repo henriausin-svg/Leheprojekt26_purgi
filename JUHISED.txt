@@ -1,6 +1,65 @@
+(kirjutan õppides neid juhiseid, et ise ka aru saaks, mida tegema peab. parandage/muutke vabalt)
+
+Projetkis kasutame branche:
+Main branch - selles otse muudatusi ei tee, ühendab vaid kontrollitud töö.
+Develop branch - siia ühendab kõigilt nende valminud töö, kontrollib, kas lehe osad töötavad omavahel.
+Feature branchid - iga liige loob oma branchi, nt feature/avaleht – pealehe arendamine, feature/kohad – kohtade tutvustamise lehe arendamine.
+
+Töö: ärge tehke oma muudatusi otse main või develop branchis
+Võtad dev branchist töö alustamiseks faili uusima versiooni
+feature/oma-ylesanne – teed muudatused
+commit - salvestad muudatused
+push - saadad githubi
+pull request - saadad requesti ühendada muudatused dev branchiga
+kontrollida tööd/muudatusi ja ühendada see
+töö lõpus lükkab projekti main branchi, kõik veebilehe failid laen üles TÜ serverisse (Henri)
+
+vaja:
+github desktop
+vscode
+
+githubi programmis linkida selle repoga
+valida repository - open in external editor - avada vscodeiga
+nüüd salvestab vscodeis tehtud muutused vaid oma arvutisse
+
+kontrollida, et värske versioon:
+avada github desktop
+valida Current Branch
+valida develop
+vajutada Fetch origin
+kui näitab, et kohalik haru on serveris olevast harust maas, vajutada Pull origin
+
+oma feature branchi loomine:
+GitHub Desktopis valida aktiivseks dev branch, valida ülevalt current branch, vajutada new branch
+nimeks nt feature/kohad, source haruks develop
+vajutada uus branch (+ publish)
+
+commit tegemine ja pushimine:
+GitHub Desktopis vasakul nimekiri muudetud failidest
+vajuta Commit to feature/kohad.
+vaata et oled feature/kohad, vajuta push origin
+
+pull request:
+GitHub Desktop: vajuta Create Pull Request
+GitHub avaneb veebilehitsejas
+kontrolli harusid: base: develop, compare: feature/kohad
+(base on haru, kuhu soovid muudatused ühendada, compare on haru, mille muudatusi soovid lisada)
+vajuta Create pull request
+kui teised on tehtud muutusi kontrollinud, vajutada Merge pull request ning muudetud failid lähevad dev branchi üles
+
+
+
+Kaardi loob Leafletiga (javascripti library)
+https://leafletjs.com/
+
 HTML failid tuleb ühendada css ja js failidega (õppida netist selle kohta)
+HTML-failid kasutavad teisi faile spetsiaalsete käskude kaudu.
+Näiteks HTML-i päiseosas on selline rida:
+<link rel="stylesheet" href="styles.css">
+See ütleb veebilehitsejale:
+„Kasuta selle HTML-faili kujundamiseks samas kaustas olevat faili styles.css.”
 
-
-
-
-Töö lõpus laen kõik netilehe failid üles TÜ serverisse (Henri)
+JavaScripti ühendamiseks kasutatakse:
+<script src="script.js" defer></script>
+See ütleb:
+„Laadi see JavaScripti fail ning käivita selle kood pärast HTML-dokumendi parsimist.”
