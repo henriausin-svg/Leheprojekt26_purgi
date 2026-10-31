@@ -1,1 +1,6 @@
-fesdsdfe
+HTML failid tuleb ühendada css ja js failidega (õppida netist selle kohta)
+
+
+
+
+Töö lõpus laen kõik netilehe failid üles TÜ serverisse (Henri)
