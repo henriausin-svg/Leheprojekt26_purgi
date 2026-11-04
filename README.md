@@ -1,4 +1,4 @@
-# Leheprojekt26
+# Veebilehe projekti tutvustus
 
 Tartu tudengitele suunatud informatiivne veebileht, mis tutvustab linnas asuvaid kasulikke ja huvitavaid paiku ning võimaldab neid interaktiivsel kaardil leida. 
 
