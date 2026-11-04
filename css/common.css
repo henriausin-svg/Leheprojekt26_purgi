@@ -1,2 +1,12 @@
 *{
- color:purple}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    color:purple;
+    background-color: honeydew;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1,6;
+}
