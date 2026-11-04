@@ -1,43 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="et">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartu kasulike kohtade kaart</title>
 
-    <title>Tartu avastaja – Kaart</title>
-
-    <!-- ühine css -->
     <link rel="stylesheet" href="css/common.css">
-
-    <!-- kaardi lehe css -->
     <link rel="stylesheet" href="css/kaart.css">
 
-    <!-- leafleti kujundus -->
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin=""
-    >
+    <!-- leafleti kujundus, allikas: https://leafletjs.com/examples-v1/quick-start/ -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
 
-    <!-- leafleti js -->
-    <script
-        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-        crossorigin=""
-        defer
+    <!-- leafleti js, allikas: https://leafletjs.com/examples-v1/quick-start/ -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
     ></script>
 
     <!-- enda js -->
     <script src="js/main.js" defer></script>
     <script src="js/map.js" defer></script>
-
 </head>
 
 <body>
-
     <!-- navigatsioon -->
     <header>
         <nav>
@@ -66,26 +54,22 @@
         <!-- kaart -->
         <section class="map-section">
 
-            <h2>Linna kaart</h2>
-
+            <h2>Tartu linna kaart</h2>
             <p>
                 KAARDI TUTVUSTUS / JUHEND
             </p>
-
-            <!-- kuvab kaardi: -->
+            <!-- KUVAB KAARDI: -->
             <div id="map"></div>
-
             <p class="map-caption">
-                Kaardi aluseks kasutame OpenStreetMap-i.
+                Kaardi aluseks kasutame OpenStreetMap-i ning kaardi enese loomiseks Leaflet-i.
             </p>
 
         </section>
 
-
         <!-- kaardi kasutusjuhend -->
         <section class="map-instructions">
 
-            <h2>header</h2>
+            <h2>Kaardi kasutamine:</h2>
 
             <ul>
                 <li>juhend1</li>
