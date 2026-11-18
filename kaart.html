@@ -1,1 +1,91 @@
-# Teine vaheleht
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartu kasulike kohtade kaart</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/kaart.css">
+
+    <!-- leafleti kujundus, allikas: https://leafletjs.com/examples-v1/quick-start/ -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- leafleti js, allikas: https://leafletjs.com/examples-v1/quick-start/ -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- enda js -->
+    <script src="js/main.js" defer></script>
+    <script src="js/map.js" defer></script>
+</head>
+
+<body>
+    <!-- navigatsioon -->
+    <header>
+        <nav>
+            <a href="index.html">Pealeht</a>
+            <a href="kohad.html">Kohad</a>
+            <a href="kaart.html" aria-current="page">Kaart</a>
+        </nav>
+    </header>
+
+    <main class="map-page">
+
+        <!-- kaardi lehe tutvustus -->
+        <section class="map-intro">
+
+            <p class="map-subtitle">SUBTITLE</p>
+
+            <h1>____</h1>
+
+            <p>
+               _____
+            </p>
+
+        </section>
+
+
+        <!-- kaart -->
+        <section class="map-section">
+
+            <h2>Tartu linna kaart</h2>
+            <p>
+                KAARDI TUTVUSTUS / JUHEND
+            </p>
+            <!-- KUVAB KAARDI: -->
+            <div id="map"></div>
+            <p class="map-caption">
+                Kaardi aluseks kasutame OpenStreetMap-i ning kaardi enese loomiseks Leaflet-i.
+            </p>
+
+        </section>
+
+        <!-- kaardi kasutusjuhend -->
+        <section class="map-instructions">
+
+            <h2>Kaardi kasutamine:</h2>
+
+            <ul>
+                <li>juhend1</li>
+
+                <li>juhend2</li>
+
+                <li>juhend3</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>footer</p>
+    </footer>
+
+</body>
+</html>
