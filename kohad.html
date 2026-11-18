@@ -2,46 +2,174 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/common.css" >
-        <title>Kasulikud kohad tudengile Tartus sisu</title>
+        <link rel="stylesheet" href="css/common.css">
+          <style>
+            .menyy {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
+            .menyy a {
+                padding: 8px 16px;
+                background-color: #6a1b6a;
+                color: white;
+                text-decoration: none;
+                border-radius: 8px;
+            }
+
+            .menyy a:hover {
+                background-color: #9c3a9c;
+            }
+
+            .tulp {
+                text-align: center;
+                margin-bottom: 100px;
+            }
+
+            .tulp h2 {
+                margin-bottom: 35px;
+            }
+
+            .tulp ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .tulp li {
+                font-size: 19px;
+                font-weight: bold;
+                width: calc(25% - 23px);
+            }
+
+            .tulp img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-top: 8px;
+            }
+            
+            h1 {
+                margin-bottom: 60px;
+             }
+            
+        </style>
     </head>
-   
+
     <body>
-        
-        <h1>Tartu tudengi ABC</h1>
+        <nav class="menyy">
+            <a href="index.html">Pealeht</a>
+            <a href="kohad.html">Asukohad</a>
+            <a href="kaart.html">Kaart</a>
+        </nav>
 
-        <h2>Ilusad paigad jalutuskäiguks</h2>
+        <h1>Asukohad</h1>
 
-        <ul>
-            <li>
-                Toomemägi<br>
-                <img src="pildid/toomemägi.jpg" alt="Toomemägi" width="300">
-            </li>
+        <div class="tulbad">
 
-            <li>
-                Emajõe kallas<br>
-                <img src="pildid/emajogi.jpg" alt="Emajõe kallas" width="300">
-            </li>
+            <!-- 1. TULP -->
+            <div class="tulp">
+                <h2>Ilusad paigad jalutuskäiguks</h2>
+                <ul>
+                    <li>
+                        Toomemägi<br>
+                        <img src="pildid/toomemägi.jpg" alt="Toomemägi" width="300">
+                    </li>
+                    <li>
+                        Emajõe kallas<br>
+                        <img src="pildid/emajogi.jpg" alt="Emajõe kallas" width="300">
+                    </li>
+                    <li>
+                        Supilinn<br>
+                        <img src="pildid/supilinn.jpg" alt="Supilinn" width="300">
+                    </li>
+                    <li>
+                        Tähtvere<br>
+                        <img src="pildid/tähtvere.jpg" alt="Tähtvere" width="300">
+                    </li>
+                    <li>
+                        Karlova<br>
+                        <img src="pildid/karlova.jpg" alt="Karlova" width="300">
+                    </li>
+                    <li>
+                        Tartu Ülikooli botaanikaaed<br>
+                        <img src="pildid/botaanikaaed.jpeg" alt="Tartu Ülikooli botaanikaaed" width="300">
+                    </li>
+                </ul>
+            </div>
 
-            <li>
-                Supilinn<br>
-                <img src="pildid/supilinn.jpg" alt="Supilinn" width="300">
-            </li>
+            <!-- 2. TULP -->
+            <div class="tulp">
+                <h2>Kuhu õhtul minna</h2>
+                <ul>
+                    <li>
+                        Möku<br>
+                        <img src="pildid/möku.jpg" alt="Möku" width="300">
+                    </li>
+                    <li>
+                        Kivi<br>
+                        <img src="pildid/kivi.jpg" alt="Kivi" width="300">
+                    </li>
+                    <li>
+                        Seik<br>
+                        <img src="pildid/seik.jpg" alt="Seik" width="300">
+                    </li>
+                    <li>
+                        Pirogovi park<br>
+                        <img src="pildid/piro.jpg" alt="Pirogovi park" width="300">
+                    </li>
+                    <li>
+                        Genialistide klubi<br>
+                        <img src="pildid/gen.jpg" alt="Genialistide klubi" width="300">
+                    </li>
+                    <li>
+                        Ula baar<br>
+                        <img src="pildid/ula.jpg" alt="Ula baar" width="300">
+                    </li>
+                </ul>
+            </div>
 
-            <li>
-                Tähtvere<br>
-                <img src="pildid/tähtvere.jpg" alt="Tähtvere" width="300">
-            </li>
+            <!-- 3. TULP -->
+            <div class="tulp">
+                <h2>Aeg mahavõtmiseks</h2>
+                <ul>
+                    <li>
+                        Werner<br>
+                        <img src="pildid/wernerr.jpg" alt="Werner" width="300">
+                    </li>
+                    <li>
+                        Kohvipaus<br>
+                        <img src="pildid/kohvipaus.jpg" alt="Kohvipaus" width="300">
+                    </li>
+                    <li>
+                        Karlova Kohv<br>
+                        <img src="pildid/karlovakohv2.jpg" alt="Karlova Kohv" width="300">
+                    </li>
+                    <li>
+                        Cruffin<br>
+                        <img src="pildid/cruffin.jpg" alt="Cruffin" width="300">
+                    </li>
+                    <li>
+                        Gustav Cafe<br>
+                        <img src="pildid/gustav.jpg" alt="Gustav cafe" width="300">
+                    </li>
+                    <li>
+                        Reval Cafe<br>
+                        <img src="pildid/reval.jpg" alt="Reval cafe" width="300">
+                    </li>
+                    <li>
+                        Mandel<br>
+                        <img src="pildid/mandel.jpg" alt="Mandel" width="300">
+                    </li>
+                </ul>
+            </div>
 
-            <li>
-                Karlova<br>
-                <img src="pildid/karlova.jpg" alt="Karlova" width="300">
-            </li>
+        </div>
 
-            <li>
-                Tartu Ülikooli botaanikaaed<br>
-                <img src="pildid/botaanikaaed.jpeg" alt="Tartu Ülikooli botaanikaaed" width="300">
-            </li>
-        </ul> 
     </body>
 </html>
