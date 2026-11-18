@@ -1,1 +1,44 @@
-# Kõigi lehtede ühine kujundus
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    color: #333333;
+    background-color: honeydew;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+h1,h2,h3{
+    color: rgb(108, 7, 115);
+    margin-bottom:12px;
+}
+
+a{
+    color: #c84ee7;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover{
+    color: #c84ee7;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+    display: block;
+}
