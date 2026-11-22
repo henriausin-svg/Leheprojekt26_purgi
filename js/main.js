@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const otsingukast = document.getElementById("koha-otsing");
-    const kohad = document.querySelectorAll(".tulbad .tulp li");
+    const kohad = document.querySelectorAll(".tulp li");
 
     // kui otsinguväli puudub, lõpetab skripti töö
     if (!otsingukast || kohad.length === 0) {
