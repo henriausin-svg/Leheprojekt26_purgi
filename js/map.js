@@ -54,13 +54,13 @@ const kohad = [
 
     {
         id: "kivi",
-        nimi: "Kivi",
+        nimi: "Kivi baar",
         koordinaadid: [58.38203884010296, 26.721549361391997]
     },
 
     {
         id: "seik",
-        nimi: "Seik",
+        nimi: "Seik baar",
         koordinaadid: [58.38155764726224, 26.721546631165975]
     },
 
@@ -78,7 +78,7 @@ const kohad = [
 
     {
         id: "werner",
-        nimi: "Werner",
+        nimi: "Werneri kohvik",
         koordinaadid: [58.38053518621302, 26.72096329020195]
     },
 
@@ -89,34 +89,40 @@ const kohad = [
     },
 
     {
-        id: "karlova",
-        nimi: "Karlova kohv",
+        id: "karlova-kohv",
+        nimi: "Karlova kohv - ökokohvi röstikoda",
         koordinaadid: [58.379751746657305, 26.722002058317624]
     },
 
     {
         id: "cruffin",
-        nimi: "Cruffin",
+        nimi: "Cruffini croissanterie",
         koordinaadid: [58.38026248768847, 26.722137886969378]
     },
 
     {
         id: "gustav",
-        nimi: "Gustav cafe",
+        nimi: "Gustav Cafe",
         koordinaadid: [58.37784996943192, 26.726658669035672]
     },
 
     {
         id: "reval",
-        nimi: "Reval cafe",
+        nimi: "Reval Café",
         koordinaadid: [58.37680510916691, 26.72746318517415]
     },
 
     {
         id: "mandel",
-        nimi: "Mandel",
+        nimi: "Mandli koogipood",
         koordinaadid: [58.38210564480205, 26.709446439067072]
     },
+
+    {
+        id: "piro",
+        nimi: "Pirogovi park",
+        koordinaadid: [58.37994843551232, 26.72072599986768]
+},
 
 ];
 
@@ -133,7 +139,7 @@ kohad.forEach(function (koht) {
         <strong>${koht.nimi}</strong>
         <br>
         <a href="kohad.html#${koht.id}">
-            Vaata kohta
+            Koha kirjelduse juurde →
         </a>
     `);
 

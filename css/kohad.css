@@ -1,1 +1,192 @@
-# Kohad lehe kujundus
+.kohad-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 30px 60px;
+}
+
+
+/* nav */
+
+.menyy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.menyy a {
+    padding: 10px 20px;
+    background-color: #6a1b6a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.menyy a:hover {
+    background-color: #9c3a9c;
+    color: white;
+    text-decoration: none;
+}
+
+.menyy a:focus-visible {
+    outline: 3px solid #b27ad5;
+    outline-offset: 3px;
+}
+
+
+/* tutvustus */
+
+.lehe-intro {
+    margin-bottom: 35px;
+}
+
+.lehe-intro h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.lehe-intro p {
+    max-width: 750px;
+    line-height: 1.7;
+}
+
+
+/* otsing */
+
+.otsinguala {
+    margin-bottom: 40px;
+}
+
+.otsinguala label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.otsinguala input {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px 15px;
+    border: 1px solid #b27ad5;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.otsinguala input:focus {
+    outline: 2px solid #9c3a9c;
+    outline-offset: 2px;
+}
+
+
+.tulbad {
+    display: grid;
+    gap: 35px;
+}
+
+
+/* iga kategooria sektsioon */
+
+.tulp {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tulp h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+/* kohtade grid*/
+
+.tulp ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ühe koha kaart */
+
+.tulp li {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f7f1fa;
+    border-radius: 12px;
+    padding: 15px;
+
+    text-align: center;
+    margin: 0;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* hiirega kaardile liikudes */
+
+.tulp li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+.koha-link {
+    display: inline-block;
+    align-self: center;
+
+    margin-bottom: 12px;
+
+    color: #6a1b6a;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.koha-link:hover {
+    color: #9c3a9c;
+    text-decoration: underline;
+}
+
+.tulp img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+}
+
+
+.koha-kirjeldus {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* otsinguga peidetud kohad pole nähtavad */
+
+.tulp li[hidden] {
+    display: none !important;
+}
+
+.jalus {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    color: #666666;
+    border-top: 1px solid #d8c5e1;
+}
+

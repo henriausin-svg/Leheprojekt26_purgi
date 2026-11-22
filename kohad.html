@@ -1,94 +1,61 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="js/main.js" defer></script> 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tartu kasulikud ja huvitavad kohad</title>
         <link rel="stylesheet" href="css/common.css">
-          <style>
-            .menyy {
-                display: flex;
-                gap: 10px;
-                margin-bottom: 20px;
-            }
-
-            .menyy a {
-                padding: 8px 16px;
-                background-color: #6a1b6a;
-                color: white;
-                text-decoration: none;
-                border-radius: 8px;
-            }
-
-            .menyy a:hover {
-                background-color: #9c3a9c;
-            }
-
-            .tulp {
-                text-align: center;
-                margin-bottom: 100px;
-            }
-
-            .tulp h2 {
-                margin-bottom: 35px;
-            }
-
-            .tulp ul {
-                list-style: none;
-                padding: 0;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 30px;
-            }
-
-            .tulp li {
-                font-size: 19px;
-                font-weight: bold;
-                width: calc(25% - 23px);
-            }
-
-            .tulp img {
-                width: 100%;
-                height: 180px;
-                object-fit: cover;
-                border-radius: 12px;
-                margin-top: 8px;
-            }
-            
-            h1 {
-                margin-bottom: 60px;
-             }
-            
-        </style>
+        <link rel="stylesheet" href="css/kohad.css">
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
-        <nav class="menyy">
-            <a href="index.html">Pealeht</a>
-            <a href="kaart.html">Kaart</a>
-        </nav>
+        <header>
+            <nav class="menyy" aria-label="Põhinavigatsioon">
+                <a href="index.html">Pealeht</a>
+                <a href="kohad.html" aria-current="page">Kohad</a>
+                <a href="kaart.html">Kaart</a>
+            </nav>
+        </header>
 
-        <h1>Asukohad</h1>
-        <div class="otsinguala">
+    <main class="kohad-page">
+
+        <!-- Lehe pealkiri ja tutvustus -->
+        <section class="lehe-intro">
+
+            <h1>Avasta Tartut!</h1>
+
+            <p>
+                kirjeldus))
+            </p>
+
+        </section>
+
+        <section class="otsinguala">
             <label for="koha-otsing">Otsi kohta:</label>
             <input
                 type="search"
                 id="koha-otsing"
                 placeholder="Sisesta koha nimi..."
             >
-        </div>
+        </section>
 
         <div class="tulbad">
 
             <!-- 1. TULP -->
-            <div class="tulp">
-                <h2>Ilusad paigad jalutuskäiguks</h2>
+            <section class="tulp" aria-labelledby="jalutus-heading">
+
+                <h2 id="jalutus-heading">Ilusad paigad jalutuskäiguks</h2>
+
                 <ul>
                     <li id="toomemagi">
                         <a class="koha-link" href="kaart.html?koht=toomemagi">
                             Toomemägi
                          </a>
                         <img src="pildid/toomemägi.jpg" alt="Toomemägi" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="emajogi">
@@ -96,6 +63,9 @@
                             Emajõe kallas
                         </a>
                         <img src="pildid/emajogi.jpg" alt="Emajõe kallas" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                    <li id="supilinn">
@@ -103,6 +73,9 @@
                             Supilinn
                         </a>
                         <img src="pildid/supilinn.jpg" alt="Supilinn" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="tahtvere">
@@ -110,6 +83,9 @@
                             Tähtvere
                         </a>
                         <img src="pildid/tähtvere.jpg" alt="Tähtvere" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="karlova">
@@ -117,6 +93,9 @@
                             Karlova
                         </a>
                         <img src="pildid/karlova.jpg" alt="Karlova" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="botaanikaaed">
@@ -124,6 +103,9 @@
                             Tartu Ülikooli botaanikaaed
                         </a>
                         <img src="pildid/botaanikaaed.jpeg" alt="Tartu Ülikooli botaanikaaed" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -137,6 +119,9 @@
                             Möku
                         </a>
                         <img src="pildid/möku.jpg" alt="Möku" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="kivi">
@@ -144,6 +129,9 @@
                             Kivi
                         </a>
                         <img src="pildid/kivi.jpg" alt="Kivi" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="seik">
@@ -151,6 +139,9 @@
                             Seik
                          </a>
                         <img src="pildid/seik.jpg" alt="Seik" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="piro">
@@ -158,6 +149,9 @@
                             Pirogovi park
                          </a>
                         <img src="pildid/piro.jpg" alt="Pirogovi park" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>      
                     </li>
 
                     <li id="gen">
@@ -165,6 +159,9 @@
                             Genialistide klubi
                         </a>
                         <img src="pildid/gen.jpg" alt="Genialistide klubi" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="ula">
@@ -172,19 +169,25 @@
                             Ula baar
                         </a>
                         <img src="pildid/ula.jpg" alt="Ula baar" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
                 </ul>
             </div>
 
             <!-- 3. TULP -->
             <div class="tulp">
-                <h2>Aeg mahavõtmiseks</h2>
+                <h2>Aja maha võtmiseks</h2>
                 <ul>
                     <li id="werner">
                         <a class="koha-link" href="kaart.html?koht=werner">
                             Werner
                         </a>
                         <img src="pildid/wernerr.jpg" alt="Werner" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="kohvipaus">
@@ -192,13 +195,19 @@
                             Kohvipaus
                         </a>
                         <img src="pildid/kohvipaus.jpg" alt="Kohvipaus" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
-                    <li id="karlova">
-                        <a class="koha-link" href="kaart.html?koht=karlova">
+                    <li id="karlova-kohv">
+                        <a class="koha-link" href="kaart.html?koht=karlova-kohv">
                             Karlova Kohv
                         </a>
                         <img src="pildid/karlovakohv2.jpg" alt="Karlova Kohv" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="cruffin">
@@ -206,6 +215,9 @@
                             Cruffin
                         </a>
                         <img src="pildid/cruffin.jpg" alt="Cruffin" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="gustav">
@@ -213,6 +225,9 @@
                             Gustav Cafe
                         </a>
                         <img src="pildid/gustav.jpg" alt="Gustav cafe" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="reval">
@@ -220,6 +235,9 @@
                             Reval Cafe
                         </a>
                         <img src="pildid/reval.jpg" alt="Reval cafe" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
 
                     <li id="mandel">
@@ -227,11 +245,18 @@
                             Mandel
                         </a>
                         <img src="pildid/mandel.jpg" alt="Mandel" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
                 </ul>
             </div>
 
         </div>
 
-    </body>
+    <footer class="lehe-jalus">
+        <p>Tartu kasulikud ja huvitavad kohad tudengitele</p>
+    </footer>
+
+</body>
 </html>
