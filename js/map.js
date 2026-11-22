@@ -122,8 +122,68 @@ const kohad = [
         id: "piro",
         nimi: "Pirogovi park",
         koordinaadid: [58.37994843551232, 26.72072599986768]
-},
+    },
 
+    {
+        id: "aparaat",
+        nimi: "Aparaaditehas",
+        koordinaadid: [58.370479033971954, 26.71611745929899]
+    },
+
+    {
+        id: "delta",
+        nimi: "Delta hoone",
+        koordinaadid: [58.38524596325133, 26.725555477990362]
+    },
+
+    {
+        id: "elektriteater",
+        nimi: "Elektriteater",
+        koordinaadid: [58.380990307900134, 26.719127839990737]
+    },
+
+
+    {
+        id: "erm",
+        nimi: "Eesti Rahva Muuseum",
+        koordinaadid: [58.39518829504244, 26.744127631055157]
+    },
+
+    {
+        id: "raamatukogu",
+        nimi: "Tartu Ülikooli raamatukogu",
+        koordinaadid: [58.37671534054486, 26.720609276484144]
+    },
+
+    {
+        id: "humana",
+        nimi: "Humana",
+        koordinaadid: [58.376120224484936, 26.711792219770558]
+    },
+
+    {
+        id: "sarapuu",
+        nimi: "Sarapuu kirbukas",
+        koordinaadid: [58.386445084881395, 26.73618180917367]
+    },
+
+    {
+        id: "sobraltsobralea",
+        nimi: "Sõbralt sõbrale Annelinn",
+        koordinaadid: [58.369331395379646, 26.76543217327981]
+    },
+
+    {
+        id: "sobraltsobralej",
+        nimi: "Sõbralt sõbrale Jõe",
+        koordinaadid: [58.36556776535495, 26.744318126286693]
+    },
+
+    {
+        id: "uuskasutuskeskus",
+        nimi: "Uuskasutuskeskus",
+        koordinaadid: [58.372117231452584, 26.762339480709976]
+    },
 ];
 
 const markerid = {};
