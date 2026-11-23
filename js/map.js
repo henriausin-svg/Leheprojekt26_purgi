@@ -1,5 +1,3 @@
-// leafleti kaardi setupi javascripti allikas: https://leafletjs.com/examples/quick-start/
-
 // keskpunkt (allikas https://leafletjs.com/examples/quick-start/)
 const map = L.map("map").setView([58.378, 26.729], 13);
 
@@ -9,6 +7,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+// kohtade loend, autor: Henri
 const kohad = [
     {
         id: "toomemagi",
@@ -188,13 +187,13 @@ const kohad = [
 
 const markerid = {};
 
-// igale kohale marker
+// igale kohale marker, autor: Henri
 kohad.forEach(function (koht) {
 
-    // loob markeri, lisab
+    // loob markeri, lisab, allikas: https://leafletjs.com/examples-v1/quick-start/
     const marker = L.marker(koht.koordinaadid).addTo(map);
 
-    // markeri hüpikaken
+    // markeri hüpikaken, autor: Henri
     marker.bindPopup(`
         <strong>${koht.nimi}</strong>
         <br>
@@ -202,22 +201,21 @@ kohad.forEach(function (koht) {
             Koha kirjelduse juurde →
         </a>
     `);
-
     markerid[koht.id] = marker;
-
 });
 
 
-// kontrollib kas kasutaja tuli kaardile koha lingilt
+// kontrollib, kas kasutaja tuli kaardile koha lingilt
 const urlParameetrid = new URLSearchParams(window.location.search);
 const valitudKoht = urlParameetrid.get("koht");
 
-// otsib urli id põhjal markerit
+// otsib URL-i id põhjal markerit
 if (valitudKoht && markerid[valitudKoht]) {
+
     const marker = markerid[valitudKoht];
 
-    // liigutab kaarti õigesse asukohta, suurendab
+    // liigutab kaardi õigesse asukohta ja suurendab, setView, getLatLng ja openPopup allikas: https://leafletjs.com/reference
     map.setView(marker.getLatLng(), 16);
+    // avab valitud koha hüpikakna
     marker.openPopup();
-
 }
