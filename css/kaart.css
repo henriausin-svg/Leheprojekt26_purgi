@@ -69,3 +69,10 @@
 .map-instructions ul {
     padding-left: 40px;
 }
+
+.map-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}

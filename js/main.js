@@ -1,4 +1,4 @@
-// kohad lehe otsingukasti js
+// kohad lehe otsingukasti js, autor: Henri
 
 // ootab kuni html on täielikult laetud
 document.addEventListener("DOMContentLoaded", function () {

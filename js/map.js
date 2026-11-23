@@ -211,7 +211,6 @@ const valitudKoht = urlParameetrid.get("koht");
 
 // otsib URL-i id põhjal markerit
 if (valitudKoht && markerid[valitudKoht]) {
-
     const marker = markerid[valitudKoht];
 
     // liigutab kaardi õigesse asukohta ja suurendab, setView, getLatLng ja openPopup allikas: https://leafletjs.com/reference

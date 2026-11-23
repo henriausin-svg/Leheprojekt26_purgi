@@ -1,44 +1,123 @@
-*{
+:root {
+    --font-main: Arial, Helvetica, sans-serif;
+    --font-heading: "Trebuchet MS", Arial, sans-serif;
+    --font-original: "Times New Roman", Times, serif;
+
+    --color-background: honeydew;
+    --color-purple: #6a1b6a;
+    --color-purple-hover: #9c3a9c;
+    --color-light-purple: #f7f1fa;
+    --color-text: #333333;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     padding: 20px;
-    color: #333333;
-    background-color: honeydew;
-    font-family:'Times New Roman', Times, serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-family: var(--font-main);
     line-height: 1.6;
 }
 
-h1,h2,h3{
-    color: rgb(108, 7, 115);
-    margin-bottom:12px;
+/* pealkirjade font */
+h1, h2, h3 {
+    color: var(--color-purple);
+    font-family: var(--font-heading);
+    margin-bottom: 12px;
 }
 
-a{
+/* kui vaja originaalset fonti */
+.font-original {
+    font-family: var(--font-original);
+}
+
+
+/* lingid */
+a {
     color: #c84ee7;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-a:hover{
-    color: #c84ee7;
+a:hover {
+    color: var(--color-purple-hover);
     text-decoration: underline;
 }
 
-ul{
+
+
+ul {
     list-style-type: none;
     padding: 0;
     margin-bottom: 20px;
 }
 
-li{
+li {
     margin-bottom: 8px;
 }
 
-img{
+img {
     max-width: 100%;
-    height:auto;
+    height: auto;
     display: block;
+}
+
+.menyy {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+
+}
+
+/* navigatsioon */
+.menyy a {
+    display: inline-block;
+    padding: 12px 25px;
+    color: white;
+    background-color: var(--color-purple);
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* hiirega nupu kohal */
+.menyy a:hover {
+    background-color: var(--color-purple-hover);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* current leht */
+.menyy a[aria-current="page"] {
+    background-color: #b27ad5;
+    color: white;
+}
+
+.lehe-jalus {
+    width: 100%;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    color: #666666;
+    border-top: 1px solid #d8c5e1;
+    font-size: 14px;
+}
+
+input, button, textarea, select {
+    font-family: var(--font-main);
 }

@@ -4,34 +4,6 @@
     padding: 25px 30px 60px;
 }
 
-/* nav */
-.menyy {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 40px;
-}
-
-.menyy a {
-    padding: 10px 20px;
-    background-color: #6a1b6a;
-    color: white;
-    text-decoration: none;
-    border-radius: 7px;
-    transition: background-color 0.2s ease;
-}
-
-.menyy a:hover {
-    background-color: #9c3a9c;
-    color: white;
-    text-decoration: none;
-}
-
-.menyy a:focus-visible {
-    outline: 3px solid #b27ad5;
-    outline-offset: 3px;
-}
-
 .lehe-intro {
     margin-bottom: 35px;
 }
@@ -160,4 +132,9 @@
 /* peidab otsingus mitte sobivad kohad */
 .tulp li[hidden] {
     display: none;
+}
+
+.koha-link::after {
+    content: " ↗";
+    font-size: 14px;
 }
