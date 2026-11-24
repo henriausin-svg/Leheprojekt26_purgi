@@ -7,7 +7,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// kohtade loend, autor: Henri
+// kohtade loend
 const kohad = [
     {
         id: "toomemagi",
@@ -187,13 +187,13 @@ const kohad = [
 
 const markerid = {};
 
-// igale kohale marker, autor: Henri
+// igale kohale marker
 kohad.forEach(function (koht) {
 
     // loob markeri, lisab, allikas: https://leafletjs.com/examples-v1/quick-start/
     const marker = L.marker(koht.koordinaadid).addTo(map);
 
-    // markeri hüpikaken, autor: Henri
+    // markeri hüpikaken
     marker.bindPopup(`
         <strong>${koht.nimi}</strong>
         <br>
