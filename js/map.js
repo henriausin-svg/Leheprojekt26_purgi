@@ -193,7 +193,7 @@ kohad.forEach(function (koht) {
     // loob markeri, lisab, allikas: https://leafletjs.com/examples-v1/quick-start/
     const marker = L.marker(koht.koordinaadid).addTo(map);
 
-    // markeri hüpikaken
+    // markeri hüpikaken, https://leafletjs.com/reference#popup
     marker.bindPopup(`
         <strong>${koht.nimi}</strong>
         <br>
