@@ -1,3 +1,5 @@
+//kaardi js, kood on koostatud Henri poolt peamiselt jälgides leafletjs lehe juhiseid
+
 // keskpunkt (allikas https://leafletjs.com/examples/quick-start/)
 const map = L.map("map").setView([58.378, 26.729], 13);
 
