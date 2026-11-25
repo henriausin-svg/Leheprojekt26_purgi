@@ -96,9 +96,21 @@ const kohad = [
     },
 
     {
+        id: "karlova-kohv",
+        nimi: "Karlova kohv - ökokohvi röstikoda",
+        koordinaadid: [58.366646, 26.729511]
+    },
+
+    {
         id: "cruffin",
         nimi: "Cruffini croissanterie",
         koordinaadid: [58.38026248768847, 26.722137886969378]
+    },
+    
+    {
+        id: "cruffin",
+        nimi: "Cruffini croissanterie",
+        koordinaadid: [58.370768, 26.715998]
     },
 
     {
@@ -163,13 +175,19 @@ const kohad = [
     },
 
     {
+        id: "humana",
+        nimi: "Vintage Humana",
+        koordinaadid: [58.380940, 26.723985]
+    },
+
+    {
         id: "sarapuu",
         nimi: "Sarapuu kirbukas",
         koordinaadid: [58.386445084881395, 26.73618180917367]
     },
 
     {
-        id: "sobraltsobralea",
+        id: "sobraltsobralej",
         nimi: "Sõbralt sõbrale Annelinn",
         koordinaadid: [58.369331395379646, 26.76543217327981]
     },
@@ -179,11 +197,17 @@ const kohad = [
         nimi: "Sõbralt sõbrale Jõe",
         koordinaadid: [58.36556776535495, 26.744318126286693]
     },
+    
+    {
+        id: "uuskasutuskeskus",
+        nimi: "Uuskasutuskeskus kesklinn",
+        koordinaadid: [58.374146, 26.722220]
+    },
 
     {
         id: "uuskasutuskeskus",
-        nimi: "Uuskasutuskeskus",
-        koordinaadid: [58.372117231452584, 26.762339480709976]
+        nimi: "Uuskasutuskeskus Annelinn",
+        koordinaadid: [58.372091, 26.762427]
     },
 ];
 
@@ -203,7 +227,13 @@ kohad.forEach(function (koht) {
             Koha kirjelduse juurde →
         </a>
     `);
-    markerid[koht.id] = marker;
+
+    // sama id-ga kohti võib olla mitu, seega hoiame markereid järjendis
+    if (markerid[koht.id]) {
+        markerid[koht.id].push(marker);
+    } else {
+        markerid[koht.id] = [marker];
+    }
 });
 
 
@@ -211,12 +241,35 @@ kohad.forEach(function (koht) {
 const urlParameetrid = new URLSearchParams(window.location.search);
 const valitudKoht = urlParameetrid.get("koht");
 
-// otsib URL-i id põhjal markerit
+// otsib URL-i id põhjal markerid
 if (valitudKoht && markerid[valitudKoht]) {
-    const marker = markerid[valitudKoht];
+    const valitud = markerid[valitudKoht];
 
-    // liigutab kaardi õigesse asukohta ja suurendab, setView, getLatLng ja openPopup allikas: https://leafletjs.com/reference
-    map.setView(marker.getLatLng(), 16);
-    // avab valitud koha hüpikakna
-    marker.openPopup();
+    if (valitud.length === 1) {
+        // üks asukoht: liigub selle juurde ja avab hüpikakna, allikas: https://leafletjs.com/reference
+        map.setView(valitud[0].getLatLng(), 16);
+        valitud[0].openPopup();
+    } else {
+        // peidab kõik teised markerid, removeLayer allikas: https://leafletjs.com/reference
+        for (const id in markerid) {
+            if (id !== valitudKoht) {
+                markerid[id].forEach(function (marker) {
+                    map.removeLayer(marker);
+                });
+            }
+        }
+
+        // suumib nii, et kõik valitud kohad mahuvad kaardile, fitBounds allikas: https://leafletjs.com/reference
+        const asukohad = valitud.map(function (marker) {
+            return marker.getLatLng();
+        });
+        map.fitBounds(asukohad, { padding: [80, 80] });
+
+        // avab kõigi valitud kohtade hüpikaknad korraga
+        valitud.forEach(function (marker) {
+            marker.getPopup().options.autoClose = false;
+            marker.getPopup().options.closeOnClick = false;
+            marker.openPopup();
+        });
+    }
 }
