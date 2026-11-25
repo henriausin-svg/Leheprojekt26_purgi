@@ -2,118 +2,371 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tartu kasulikud ja huvitavad kohad</title>
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/kohad.css">
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
-        <nav class="menyy">
-            <a href="index.html">Pealeht</a>
-            <a href="kaart.html">Kaart</a>
-        </nav>
+        <header>
+            <nav class="menyy" aria-label="Põhinavigatsioon">
+                <a href="index.html">Pealeht</a>
+                <a href="kohad.html" aria-current="page">Kohad</a>
+                <a href="kaart.html">Kaart</a>
+            </nav>
+        </header>
 
-        <h1>Asukohad</h1>
+    <main class="kohad-page">
+        <!-- Lehe pealkiri ja tutvustus -->
+        <section class="lehe-intro">
+
+            <h1>Avasta Tartut!</h1>
+            <p>
+                kirjeldus))
+            </p>
+
+        </section>
+
+        <section class="otsinguala">
+            <label for="koha-otsing">Otsi kohta:</label>
+            <input
+                type="search"
+                id="koha-otsing"
+                placeholder="Sisesta koha nimi...">
+        </section>
 
         <div class="tulbad">
 
             <!-- 1. TULP -->
-            <div class="tulp">
-                <h2>Ilusad paigad jalutuskäiguks</h2>
+            <section class="tulp" aria-labelledby="jalutus-heading">
+                <h2 id="jalutus-heading">Ilusad paigad jalutuskäiguks</h2>
                 <ul>
-                    <li>
-                        Toomemägi<br>
+                    <li id="toomemagi">
+                        <a class="koha-link" href="kaart.html?koht=toomemagi">
+                            Toomemägi
+                         </a>
                         <img src="pildid/toomemägi.jpg" alt="Toomemägi" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Emajõe kallas<br>
+
+                    <li id="emajogi">
+                        <a class="koha-link" href="kaart.html?koht=emajogi">
+                            Emajõe kallas
+                        </a>
                         <img src="pildid/emajogi.jpg" alt="Emajõe kallas" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Supilinn<br>
+
+                   <li id="supilinn">
+                        <a class="koha-link" href="kaart.html?koht=supilinn">
+                            Supilinn
+                        </a>
                         <img src="pildid/supilinn.jpg" alt="Supilinn" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Tähtvere<br>
+
+                    <li id="tahtvere">
+                        <a class="koha-link" href="kaart.html?koht=tahtvere">
+                            Tähtvere
+                        </a>
                         <img src="pildid/tähtvere.jpg" alt="Tähtvere" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Karlova<br>
+
+                    <li id="karlova">
+                        <a class="koha-link" href="kaart.html?koht=karlova">
+                            Karlova
+                        </a>
                         <img src="pildid/karlova.jpg" alt="Karlova" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Tartu Ülikooli botaanikaaed<br>
+
+                    <li id="botaanikaaed">
+                        <a class="koha-link" href="kaart.html?koht=botaanikaaed">
+                            Tartu Ülikooli botaanikaaed
+                        </a>
                         <img src="pildid/botaanikaaed.jpeg" alt="Tartu Ülikooli botaanikaaed" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
                 </ul>
-            </div>
+            </section>
+
 
             <!-- 2. TULP -->
             <div class="tulp">
                 <h2>Kuhu õhtul minna</h2>
                 <ul>
-                    <li>
-                        Möku<br>
+                    <li id="moku">
+                        <a class="koha-link" href="kaart.html?koht=moku">
+                            Möku
+                        </a>
                         <img src="pildid/möku.jpg" alt="Möku" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Kivi<br>
+
+                    <li id="kivi">
+                        <a class="koha-link" href="kaart.html?koht=kivi">
+                            Kivi
+                        </a>
                         <img src="pildid/kivi.jpg" alt="Kivi" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Seik<br>
+
+                    <li id="seik">
+                        <a class="koha-link" href="kaart.html?koht=seik">
+                            Seik
+                         </a>
                         <img src="pildid/seik.jpg" alt="Seik" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Pirogovi park<br>
+
+                    <li id="piro">
+                        <a class="koha-link" href="kaart.html?koht=piro">
+                            Pirogovi park
+                         </a>
                         <img src="pildid/piro.jpg" alt="Pirogovi park" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>      
                     </li>
-                    <li>
-                        Genialistide klubi<br>
+
+                    <li id="gen">
+                        <a class="koha-link" href="kaart.html?koht=gen">
+                            Genialistide klubi
+                        </a>
                         <img src="pildid/gen.jpg" alt="Genialistide klubi" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Ula baar<br>
+
+                    <li id="ula">
+                        <a class="koha-link" href="kaart.html?koht=ula">
+                            Ula baar
+                        </a>
                         <img src="pildid/ula.jpg" alt="Ula baar" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
                 </ul>
             </div>
 
             <!-- 3. TULP -->
             <div class="tulp">
-                <h2>Aeg mahavõtmiseks</h2>
+                <h2>Aja maha võtmiseks</h2>
                 <ul>
-                    <li>
-                        Werner<br>
+                    <li id="werner">
+                        <a class="koha-link" href="kaart.html?koht=werner">
+                            Werner
+                        </a>
                         <img src="pildid/wernerr.jpg" alt="Werner" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Kohvipaus<br>
+
+                    <li id="kohvipaus">
+                        <a class="koha-link" href="kaart.html?koht=kohvipaus">
+                            Kohvipaus
+                        </a>
                         <img src="pildid/kohvipaus.jpg" alt="Kohvipaus" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Karlova Kohv<br>
+
+                    <li id="karlova-kohv">
+                        <a class="koha-link" href="kaart.html?koht=karlova-kohv">
+                            Karlova Kohv
+                        </a>
                         <img src="pildid/karlovakohv2.jpg" alt="Karlova Kohv" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Cruffin<br>
+
+                    <li id="cruffin">
+                        <a class="koha-link" href="kaart.html?koht=cruffin">
+                            Cruffin
+                        </a>
                         <img src="pildid/cruffin.jpg" alt="Cruffin" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Gustav Cafe<br>
+
+                    <li id="gustav">
+                        <a class="koha-link" href="kaart.html?koht=gustav">
+                            Gustav Cafe
+                        </a>
                         <img src="pildid/gustav.jpg" alt="Gustav cafe" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Reval Cafe<br>
+
+                    <li id="reval">
+                        <a class="koha-link" href="kaart.html?koht=reval">
+                            Reval Cafe
+                        </a>
                         <img src="pildid/reval.jpg" alt="Reval cafe" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
-                    <li>
-                        Mandel<br>
+
+                    <li id="mandel">
+                        <a class="koha-link" href="kaart.html?koht=mandel">
+                            Mandel
+                        </a>
                         <img src="pildid/mandel.jpg" alt="Mandel" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tulp">
+                <h2>Muu</h2>
+                <ul>
+                    <li id="aparaat">
+                        <a class="koha-link" href="kaart.html?koht=aparaat">
+                            Aparaaditehas
+                        </a>
+                        <img src="pildid/aparaat.jpg" alt="Aparaaditehas" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+
+                    <li id="delta">
+                        <a class="koha-link" href="kaart.html?koht=delta">
+                            Delta hoone
+                        </a>
+                        <img src="pildid/delta.jpg" alt="Delta" width="300">
+                        <p class="koha-kirjeldus">
+                            Meie peamine õppehoone
+                        </p>
+                    </li>
+
+                    <li id="elektriteater">
+                        <a class="koha-link" href="kaart.html?koht=elektriteater">
+                            Elektriteater
+                        </a>
+                        <img src="pildid/elektriteater.jpg" alt="Elektriteater" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+
+                    <li id="erm">
+                        <a class="koha-link" href="kaart.html?koht=erm">
+                            Eesti Rahva Muuseum
+                        </a>
+                        <img src="pildid/erm.jpg" alt="Eesti Rahva Muuseum" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+
+                    <li id="raamatukogu">
+                        <a class="koha-link" href="kaart.html?koht=raamatukogu">
+                            Tartu Ülikooli raamatukogu
+                        </a>
+                        <img src="pildid/raamatukogu.jpg" alt="Raamatukogu" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
                     </li>
                 </ul>
             </div>
 
         </div>
 
-    </body>
+            <div class="tulp">
+                <h2>Taaskasutuskeskused</h2>
+                <ul>
+
+                    <li id="humana">
+                        <a class="koha-link" href="kaart.html?koht=humana">
+                            Humana
+                        </a>
+                        <img src="pildid/humana.jpg" alt="Humana" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+
+                    <li id="sarapuu">
+                        <a class="koha-link" href="kaart.html?koht=sarapuu">
+                            Sarapuu kirbukas
+                        </a>
+                        <img src="pildid/sarapuu.jpg" alt="Sarapuu kirbukas" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+
+                    <li id="sobraltsobralea">
+                        <a class="koha-link" href="kaart.html?koht=sobraltsobralea">
+                            Sõbralt sõbrale Annelinn
+                        </a>
+                        <img src="pildid/sobraltsobralea.jpg" alt="Sõbralt sõbrale Annelinn" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+
+                    <li id="sobraltsobralej">
+                        <a class="koha-link" href="kaart.html?koht=sobraltsobralej">
+                            Sõbralt sõbrale Jõe
+                        </a>
+                        <img src="pildid/sobraltsobralej.jpg" alt="Sõbralt sõbrale Jõe" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+
+                    <li id="uuskasutuskeskus">
+                        <a class="koha-link" href="kaart.html?koht=uuskasutuskeskus">
+                            Uuskasutuskeskus
+                        </a>
+                        <img src="pildid/uuskasutuskeskus.jpg" alt="Uuskasutuskeskus" width="300">
+                        <p class="koha-kirjeldus">
+                            kirjeldus
+                        </p>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+    <footer class="lehe-jalus">
+        <p>Tartu kasulikud ja huvitavad kohad tudengitele</p>
+    </footer>
+
+</body>
 </html>

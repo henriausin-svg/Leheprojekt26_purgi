@@ -27,7 +27,7 @@
 <body>
     <!-- navigatsioon -->
     <header>
-        <nav>
+        <nav class="menyy" aria-label="Põhinavigatsioon">
             <a href="index.html">Pealeht</a>
             <a href="kohad.html">Kohad</a>
             <a href="kaart.html" aria-current="page">Kaart</a>
@@ -36,55 +36,59 @@
 
     <main class="map-page">
 
-        <!-- kaardi lehe tutvustus -->
         <section class="map-intro">
-
-            <p class="map-subtitle">SUBTITLE</p>
-
-            <h1>____</h1>
-
-            <p>
-               _____
-            </p>
-
+            <h1>Tartu kasulike kohtade kaart</h1>
+            <div class="map-info-card">
+                <p>
+                    Siit leiad Tartu paigad, kus tudengina aega veeta,
+                    õppida, sõpradega kohtuda või lihtsalt puhata.
+                    Kaardil saad leida erinevate paikade asukohad.
+                </p>
+            </div>
         </section>
+        <div class="map-container">
 
-
-        <!-- kaart -->
         <section class="map-section">
 
-            <h2>Tartu linna kaart</h2>
-            <p>
-                KAARDI TUTVUSTUS / JUHEND
-            </p>
-            <!-- KUVAB KAARDI: -->
-            <div id="map"></div>
-            <p class="map-caption">
-                Kaardi aluseks kasutame OpenStreetMap-i ning kaardi enese loomiseks Leaflet-i.
-            </p>
+                <div class="map-info-card map-section-info">
+                    <h2>Tartu linna kaart</h2>
+                    <p>
+                        Kaardile on märgitud meie veebilehel tutvustatud kohad.
+                        Vajutades markerile avaneb koha nimi ja link kirjeldusele.
+                        Kohtade lehelt nimele vajutades suunatakse sind automaatselt
+                        vastava asukoha juurde.
+                    </p>
+                </div>
+
+                <div class="map-frame">
+                    <div id="map"></div>
+                </div>
+
+                <p class="map-caption">
+                    Kaardi aluseks kasutame OpenStreetMap-i ning kaardi
+                    loomiseks Leaflet-i.
+                </p>
+
 
         </section>
 
         <!-- kaardi kasutusjuhend -->
         <section class="map-instructions">
-
             <h2>Kaardi kasutamine:</h2>
-
             <ul>
-                <li>juhend1</li>
-
-                <li>juhend2</li>
-
-                <li>juhend3</li>
+                <li>Kaarti saad liigutada hiire või puuteekraaniga.</li>
+                <li>Suurendamiseks ja vähendamiseks kasuta hiire rullikut või kaardi nurgas olevaid +/- nuppe.</li>
+                <li>Vajuta kaardil olevale markerile, et näha koha nime ning liikuda selle kirjeldusele</li>
             </ul>
-
         </section>
 
     </main>
+        </div>
 
-
-    <footer>
-        <p>footer</p>
+    <footer class="lehe-jalus">
+        <p>
+            Tartu tudengite kohajuhend | 2026
+        </p>
     </footer>
 
 </body>
