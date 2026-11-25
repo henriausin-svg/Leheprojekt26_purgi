@@ -107,8 +107,8 @@
 .hero h1 span {
     display: block;
     color: #333333;
-    font-family: var(--font-original);
-    font-style: italic;
+    font-family:Impact, "Arial Black", sans-serif;
+    font-style: normal;
     font-weight: normal;
     font-size: 0.65em;
     margin-top: 15px;
