@@ -91,25 +91,25 @@ const kohad = [
 
     {
         id: "karlova-kohv",
-        nimi: "Karlova kohv - ökokohvi röstikoda",
+        nimi: "Karlova kohv Raekoda",
         koordinaadid: [58.379751746657305, 26.722002058317624]
     },
 
     {
         id: "karlova-kohv",
-        nimi: "Karlova kohv - ökokohvi röstikoda",
+        nimi: "Karlova kohv",
         koordinaadid: [58.366646, 26.729511]
     },
 
     {
         id: "cruffin",
-        nimi: "Cruffini croissanterie",
+        nimi: "Cruffin Raekoda",
         koordinaadid: [58.38026248768847, 26.722137886969378]
     },
     
     {
         id: "cruffin",
-        nimi: "Cruffini croissanterie",
+        nimi: "Cruffin Aparaaditehas",
         koordinaadid: [58.370768, 26.715998]
     },
 
@@ -121,7 +121,7 @@ const kohad = [
 
     {
         id: "reval",
-        nimi: "Reval Café",
+        nimi: "Reval Cafe",
         koordinaadid: [58.37680510916691, 26.72746318517415]
     },
 
@@ -145,7 +145,7 @@ const kohad = [
 
     {
         id: "delta",
-        nimi: "Delta hoone",
+        nimi: "Delta õppehoone",
         koordinaadid: [58.38524596325133, 26.725555477990362]
     },
 
