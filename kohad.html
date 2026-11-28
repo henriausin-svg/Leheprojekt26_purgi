@@ -1,1 +1,360 @@
-# Esimene vaheleht
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tartu kasulikud ja huvitavad kohad</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/kohad.css">
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="menyy" aria-label="Põhinavigatsioon">
+                <a href="index.html">Pealeht</a>
+                <a href="kohad.html" aria-current="page">Kohad</a>
+                <a href="kaart.html">Kaart</a>
+            </nav>
+        </header>
+
+    <main class="kohad-page">
+        <!-- Lehe pealkiri ja tutvustus -->
+        <section class="lehe-intro">
+
+            <h1>Avasta Tartut!</h1>
+            <p>
+                Siit leiad koos lühikirjeldusega tudengile sobilikke kohti Tartus, mida külastada, ning kus sõpradega aega veeta.
+            </p>
+        </section>
+
+        <section class="otsinguala">
+            <label for="koha-otsing">Otsi kohta:</label>
+            <input
+                type="search"
+                id="koha-otsing"
+                placeholder="Sisesta koha nimi...">
+        </section>
+
+        <div class="tulbad">
+
+            <!-- 1. TULP -->
+            <section class="tulp" aria-labelledby="jalutus-heading">
+                <h2 id="jalutus-heading">Ilusad paigad jalutuskäiguks</h2>
+                <ul>
+                    <li id="toomemagi">
+                        <a class="koha-link" href="kaart.html?koht=toomemagi">
+                            Toomemägi
+                         </a>
+                        <img src="pildid/toomemägi.jpg" alt="Toomemägi" width="300">
+                        <p class="koha-kirjeldus">
+                            Imeilus park Tartu linna südames, kus saab nautida sügiseseid värve, imelisi vaateid linnale ja jalutada mööda Toomkiriku varemeid. 
+                        </p>
+                    </li>
+
+                    <li id="emajogi">
+                        <a class="koha-link" href="kaart.html?koht=emajogi">
+                            Emajõe kallas
+                        </a>
+                        <img src="pildid/emajogi.jpg" alt="Emajõe kallas" width="300">
+                        <p class="koha-kirjeldus">
+                            Ideaalne koht jalutuskäiguks, kus saab nautida jõeäärset loodust, sõpradega istuda ja jutustada ning külastada sealseid baare ja restorane.
+                        </p>
+                    </li>
+
+                   <li id="supilinn">
+                        <a class="koha-link" href="kaart.html?koht=supilinn">
+                            Supilinn
+                        </a>
+                        <img src="pildid/supilinn.jpg" alt="Supilinn" width="300">
+                        <p class="koha-kirjeldus">
+                            Hubane ja väga omanäoline linnaosa, kus saab uudistada värvilisi puidust majakesi. Vahetusläheduses on ka Emajõgi ning palju sportimisvõimalusi.
+                        </p>
+                    </li>
+
+                    <li id="tahtvere">
+                        <a class="koha-link" href="kaart.html?koht=tahtvere">
+                            Tähtvere
+                        </a>
+                        <img src="pildid/tähtvere.jpg" alt="Tähtvere" width="300">
+                        <p class="koha-kirjeldus">
+                            Rahulik linnaosa Tartus, kus saab jalutada mööda valgustatud alleed ning avastada huvitava arhitektuuriga maju kaarjas tänavatel.
+                        </p>
+                    </li>
+
+                    <li id="karlova">
+                        <a class="koha-link" href="kaart.html?koht=karlova">
+                            Karlova
+                        </a>
+                        <img src="pildid/karlova.jpg" alt="Karlova" width="300">
+                        <p class="koha-kirjeldus">
+                            Karlova on välimuselt mitmekülgne linnaosa, kus on nii vanu puumaju kui ka modernsemaid ehitisi. Seal on mitmeid mõnusaid kohvikuid ja kohalikke poekesi.
+                        </p>
+                    </li>
+
+                    <li id="botaanikaaed">
+                        <a class="koha-link" href="kaart.html?koht=botaanikaaed">
+                            Tartu Ülikooli botaanikaaed
+                        </a>
+                        <img src="pildid/botaanikaaed.jpeg" alt="Tartu Ülikooli botaanikaaed" width="300">
+                        <p class="koha-kirjeldus">
+                            Botaanikaaed on ideaalseim koht Tartus looduse nautimiseks. Seal on võimalik jalutada taimede vahel mööda erinevaid teid ning uudistada tiigis elavaid kalu. Lisaks on seal kasvuhooned, kus on võimalik näha eksootilisi taimi.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+
+            <!-- 2. TULP -->
+            <div class="tulp">
+                <h2>Kuhu õhtul minna</h2>
+                <ul>
+                    <li id="moku">
+                        <a class="koha-link" href="kaart.html?koht=moku">
+                            Möku
+                        </a>
+                        <img src="pildid/möku.jpg" alt="Möku" width="300">
+                        <p class="koha-kirjeldus">
+                            Tartu tudengite seas populaarseim baar, kus korraldatakse lisaks tavapärasele külastamisele ka erinevaid üritusi, näiteks toimuvad kolmapäeviti bingoõhtud. 
+                        </p>
+                    </li>
+
+                    <li id="kivi">
+                        <a class="koha-link" href="kaart.html?koht=kivi">
+                            Kivi
+                        </a>
+                        <img src="pildid/kivi.jpg" alt="Kivi" width="300">
+                        <p class="koha-kirjeldus">
+                            Väike baar koos hooviga Tartu südames, mis on oma nime saanud ukse ees olevate kivide järgi.
+                        </p>
+                    </li>
+
+                    <li id="seik">
+                        <a class="koha-link" href="kaart.html?koht=seik">
+                            Seik
+                         </a>
+                        <img src="pildid/seik.jpg" alt="Seik" width="300">
+                        <p class="koha-kirjeldus">
+                            Väike baar-klubi, kus on võimalik nautida head muusikat ja populaarseid hitte. Tegu on väikese, kuid väga suure külastusega baariga.
+                        </p>
+                    </li>
+
+                    <li id="piro">
+                        <a class="koha-link" href="kaart.html?koht=piro">
+                            Pirogovi park
+                         </a>
+                        <img src="pildid/piro.jpg" alt="Pirogovi park" width="300">
+                        <p class="koha-kirjeldus">
+                            Park Tartu kesklinnas raekoja vastas, mis on populaarsust kogunud just tudengite seas. Seal on võimalik veeta kursusekaaslastega koos aega ning tihtipeale toimuvad seal ka tudengitele mõeldud üritused. 
+                        </p>      
+                    </li>
+
+                    <li id="gen">
+                        <a class="koha-link" href="kaart.html?koht=gen">
+                            Genialistide klubi
+                        </a>
+                        <img src="pildid/gen.jpg" alt="Genialistide klubi" width="300">
+                        <p class="koha-kirjeldus">
+                            Omanäoline klubi, kus on võimalik nautida ilusat atmosfääri ja head muusikat koos oma sõpradega.
+                        </p>
+                    </li>
+
+                    <li id="ula">
+                        <a class="koha-link" href="kaart.html?koht=ula">
+                            Ula baar
+                        </a>
+                        <img src="pildid/ula.jpg" alt="Ula baar" width="300">
+                        <p class="koha-kirjeldus">
+                            Armas väike baar rahulikus piirkonnas Toomemäe kõrval, kus on suur õu ning hea võimalus aja mahavõtmiseks.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3. TULP -->
+            <div class="tulp">
+                <h2>Aja maha võtmiseks</h2>
+                <ul>
+                    <li id="werner">
+                        <a class="koha-link" href="kaart.html?koht=werner">
+                            Werner
+                        </a>
+                        <img src="pildid/wernerr.jpg" alt="Werner" width="300">
+                        <p class="koha-kirjeldus">
+                            Tartu südalinnas paiknev kohvik läbi kahe korruse ja väikese hoovialaga, kus on ka suur valik erinevaid küpsetisi. Mõnus koht õppimiseks.
+                        </p>
+                    </li>
+
+                    <li id="kohvipaus">
+                        <a class="koha-link" href="kaart.html?koht=kohvipaus">
+                            Kohvipaus
+                        </a>
+                        <img src="pildid/kohvipaus.jpg" alt="Kohvipaus" width="300">
+                        <p class="koha-kirjeldus">
+                            Väike nurgapealne kohvik südalinnas, kus on võimalik nautida head kohvi ja küpsetisi.
+                        </p>
+                    </li>
+
+                    <li id="karlova-kohv">
+                        <a class="koha-link" href="kaart.html?koht=karlova-kohv">
+                            Karlova Kohv
+                        </a>
+                        <img src="pildid/karlovakohv2.jpg" alt="Karlova Kohv" width="300">
+                        <p class="koha-kirjeldus">
+                            Armastatud kohvik nii Karlovas kui ka Raekoja platsil, kus nautida maitsvat kohvi.
+                        </p>
+                    </li>
+
+                    <li id="cruffin">
+                        <a class="koha-link" href="kaart.html?koht=cruffin">
+                            Cruffin
+                        </a>
+                        <img src="pildid/cruffin.jpg" alt="Cruffin" width="300">
+                        <p class="koha-kirjeldus">
+                            Ilusa väljapaneku ja maitsvate küpsetistega kohvik, mis asub nii Raekoja platsil kui ka Aparaaditehases.
+                        </p>
+                    </li>
+
+                    <li id="gustav">
+                        <a class="koha-link" href="kaart.html?koht=gustav">
+                            Gustav Cafe
+                        </a>
+                        <img src="pildid/gustav.jpg" alt="Gustav cafe" width="300">
+                        <p class="koha-kirjeldus">
+                            Läbi kahe korruse paiknev kohvik Tartu kesklinnas, mis pakub külastajale palju avarust ja head toitu. Lisaks on seal hea võimalus õppida.
+                        </p>
+                    </li>
+
+                    <li id="reval">
+                        <a class="koha-link" href="kaart.html?koht=reval">
+                            Reval Cafe
+                        </a>
+                        <img src="pildid/reval.jpg" alt="Reval cafe" width="300">
+                        <p class="koha-kirjeldus">
+                            Avar ja huvitava interjööriga kohvik Tartu kesklinnas koos maitsvate söökidega. Sobib imeliselt ka õppimiseks.
+                        </p>
+                    </li>
+
+                    <li id="mandel">
+                        <a class="koha-link" href="kaart.html?koht=mandel">
+                            Mandel
+                        </a>
+                        <img src="pildid/mandel.jpg" alt="Mandel" width="300">
+                        <p class="koha-kirjeldus">
+                            Tartu kesklinnast veidi eemal paiknev hubane kohvik maitsvate küpsetistega. Kohviku ukseesine on vastavalt aastaajale imeliselt kaunistatud. Suvel on võimalik külastada ka kohviku lillelist salaaeda.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tulp">
+                <h2>Muu</h2>
+                <ul>
+                    <li id="aparaat">
+                        <a class="koha-link" href="kaart.html?koht=aparaat">
+                            Aparaaditehas
+                        </a>
+                        <img src="pildid/aparaat.jpg" alt="Aparaaditehas" width="300">
+                        <p class="koha-kirjeldus">
+                            Aparaaditehas on Tartu kesklinna kandis omanäolise atmosfääriga paiknev kultuurikeskus, mille hoovis kui ka siseruumides toimuvad erinevad üritused. Lisaks on seal mitmeid hinnatuid restorane ja kohvikuid. 
+                        </p>
+                    </li>
+
+                    <li id="elektriteater">
+                        <a class="koha-link" href="kaart.html?koht=elektriteater">
+                            Elektriteater
+                        </a>
+                        <img src="pildid/elektriteater.jpg" alt="Elektriteater" width="300">
+                        <p class="koha-kirjeldus">
+                            Elektriteater on Tartu Ülikooli peahoone kõrval paiknev väike vanamoodsa arhitektuuriga väärtfilmikino.
+                        </p>
+                    </li>
+
+                    <li id="erm">
+                        <a class="koha-link" href="kaart.html?koht=erm">
+                            Eesti Rahva Muuseum
+                        </a>
+                        <img src="pildid/erm.jpg" alt="Eesti Rahva Muuseum" width="300">
+                        <p class="koha-kirjeldus">
+                            ERM on Tartu linna ääres paiknev modernne muuseum, kus on võimalik tutvuda Eesti kultuuri ja ajaloo ning erinevate näitustega.
+                        </p>
+                    </li>
+
+                    <li id="raamatukogu">
+                        <a class="koha-link" href="kaart.html?koht=raamatukogu">
+                            Tartu Ülikooli raamatukogu
+                        </a>
+                        <img src="pildid/raamatukogu.jpg" alt="Raamatukogu" width="300">
+                        <p class="koha-kirjeldus">
+                            Tartu Ülikooli raamatukogu on Tartu kesklinnas paiknev suur hoone, mis on ideaalne koht õppimiseks, ning on eriti populaarne just tudengite seas.
+                        </p>
+                    </li>
+                    <li id="delta">
+                        <a class="koha-link" href="kaart.html?koht=delta">
+                            Delta hoone
+                        </a>
+                        <img src="pildid/delta.jpg" alt="Delta" width="300">
+                        <p class="koha-kirjeldus">
+                            Tartu Ülikooli Delta hoone on Emajõe ääres paiknev õppehoone, mis on ilus hubane koht õppimiseks. 
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+            <div class="tulp">
+                <h2>Taaskasutuskeskused</h2>
+                <ul>
+
+                    <li id="humana">
+                        <a class="koha-link" href="kaart.html?koht=humana">
+                            Humana
+                        </a>
+                        <img src="pildid/humana.jpg" alt="Humana" width="300">
+                        <p class="koha-kirjeldus">
+                            Taaskasutskeskus, kust on võimalik saada erinevaid huvitavaid esemeid heade hindade eest. Tartus on tavaline Humana Vaksali piirkonnas ja Vintage Humana kesklinnas.
+                        </p>
+                    </li>
+
+                    <li id="sarapuu">
+                        <a class="koha-link" href="kaart.html?koht=sarapuu">
+                            Sarapuu kirbukas
+                        </a>
+                        <img src="pildid/sarapuu.jpg" alt="Sarapuu kirbukas" width="300">
+                        <p class="koha-kirjeldus">
+                            Suur taaskasutuskeskus läbi mitme korruse, kus on suur valik nii kasutatud kui ka uusi esemeid.
+                        </p>
+                    </li>
+
+                    <li id="sobraltsobralej">
+                        <a class="koha-link" href="kaart.html?koht=sobraltsobralej">
+                            Sõbralt sõbrale
+                        </a>
+                        <img src="pildid/sobraltsobralej.jpg" alt="Sõbralt sõbrale Jõe" width="300">
+                        <p class="koha-kirjeldus">
+                            Taaskasutuskeskus Karlova ääres ja Annelinnas, kust on võimalik leida hea hinnaga huvitavaid esemeid ja mööblit.
+                        </p>
+                    </li>
+
+                    <li id="uuskasutuskeskus">
+                        <a class="koha-link" href="kaart.html?koht=uuskasutuskeskus">
+                            Uuskasutuskeskus
+                        </a>
+                        <img src="pildid/uuskasutuskeskus.jpg" alt="Uuskasutuskeskus" width="300">
+                        <p class="koha-kirjeldus">
+                            Taaskasutuskeskus Tartu kesklinnas ja Annelinnas, kust saab leida hästi hoitud teise ringi esemeid.
+                        </p>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+    <footer class="lehe-jalus">
+        <p>Tartu kasulikud ja huvitavad kohad tudengitele</p>
+    </footer>
+
+</body>
+</html>

@@ -1,13 +1,9 @@
-# Leheprojekt26
+# Veebilehe projekti tutvustus
 
-LEHE TUTVUSTUS SIIA
+Tartu tudengitele suunatud informatiivne veebileht, mis tutvustab linnas asuvaid kasulikke ja huvitavaid paiku ning võimaldab neid interaktiivsel kaardil leida. 
 
-`Projekti tutvustus (wiki/README.md) GitHubis 
+Henri, Helena, Karoliina
 
-Pole tutvustust - 0 punkti
+Hetkel vastutab veebilehe kirjutamise osas Helena üldise ja pealehe css-ide eest ning pealehe htmli-i eest. Karoliina vastutab info leidmise eest, mida veebilehele panna, ning kohtade htmli-i eest. Henri vastutab kaardi html-i eest ja kaardi css eest.
 
-Poolik või puuduv tutvustus - 0.5 punkt
-
-Eeskujulik projekti tutvustus Githubis vms keskkonnas sisaldab: Mida veebileht tutvustab või mis on selle lehe eesmärk? Kes on tiimiliikmed? Milline on tiimisisene tööjaotus?
-
-- `1 punkti`
+Iga rühmaliige vastutab talle tööplaanis määratud ülesannete õigeaegse täitmsie eest ning vajadusel suhtleb teiste rühmaliikmetega, et küsida abi või teha koostööd.  

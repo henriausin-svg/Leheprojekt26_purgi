@@ -1,1 +1,202 @@
-# Pealehe kujundus
+/* Pealehe kujundus */
+
+.avaleht {
+    min-height: calc(100vh - 120px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    width: 100%;
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(178, 122, 213, 0.35),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(106, 27, 106, 0.25),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fffaff 0%,
+            #f7f1fa 50%,
+            #e9f7ee 100%
+        );
+
+    box-shadow:
+        0 20px 60px rgba(106, 27, 106, 0.15);
+}
+
+
+/* Dekoratiivne lilla ring vasakus ülanurgas */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(178, 122, 213, 0.15);
+    top: -120px;
+    left: -100px;
+}
+
+/* Dekoratiivne ring paremas alanurgas */
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 2px solid rgba(106, 27, 106, 0.08);
+    right: -150px;
+    bottom: -180px;
+}
+
+/* pealkiri ja tekst */
+
+.hero-sisu {
+    position: relative;
+    z-index: 2;
+    width: min(800px, 90%);
+}
+
+/* Väike tekst pealkirja kohal */
+
+.eellugu {
+    margin-bottom: 18px;
+    color: var(--color-purple);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* Peamine pealkiri */
+
+.hero h1 {
+    margin: 0;
+    color: var(--color-purple);
+    font-family: var(--font-heading);
+    font-size: clamp(42px, 8vw, 92px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    text-wrap: balance;
+}
+
+/* Pealkirja teine rida */
+
+.hero h1 span {
+    display: block;
+    color: #333333;
+    font-family:Impact, "Arial Black", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.65em;
+    margin-top: 15px;
+    letter-spacing: -1px;
+}
+
+/* Autorite nimed */
+
+.autorid {
+    margin-top: 35px;
+    font-size: 18px;
+    color: #666666;
+    letter-spacing: 2px;
+}
+
+
+/* naigeerimise lingis */
+
+.hero-lingid {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-lingid a {
+    padding: 13px 25px;
+    border-radius: 50px;
+    background-color: var(--color-purple);
+    color: white;
+    font-weight: bold;
+    box-shadow:
+        0 8px 20px rgba(106, 27, 106, 0.18);
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Hiirega lingi kohal */
+
+.hero-lingid a:hover {
+    background-color: var(--color-purple-hover);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow:
+        0 12px 25px rgba(106, 27, 106, 0.25);
+}
+
+
+/* telefoni jaoks kohandamine */
+
+@media (max-width: 600px) {
+
+    .avaleht {
+        padding: 10px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        border-radius: 20px;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 13vw, 65px);
+        letter-spacing: -2px;
+    }
+
+    .eellugu {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .autorid {
+        font-size: 15px;
+    }
+
+    .hero-lingid {
+        flex-direction: column;
+    }
+
+    .hero-lingid a {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+}
