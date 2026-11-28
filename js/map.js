@@ -14,144 +14,168 @@ const kohad = [
     {
         id: "toomemagi",
         nimi: "Toomemägi",
+        kategooria: "jalutus",
         koordinaadid: [58.379723, 26.716667]
     },
 
     {
         id: "botaanikaaed",
         nimi: "Tartu Ülikooli botaanikaaed",
+        kategooria: "jalutus",
         koordinaadid: [58.384831, 26.721487]
     },
 
     {
         id: "emajogi",
         nimi: "Emajõe kallas",
+        kategooria: "jalutus",
         koordinaadid: [58.379657, 26.726963]
     },
 
     {
         id: "supilinn",
         nimi: "Supilinn",
+        kategooria: "jalutus",
         koordinaadid: [58.387822, 26.710184]
     },
 
     {
         id: "tahtvere",
         nimi: "Tähtvere",
+        kategooria: "jalutus",
         koordinaadid: [58.390489, 26.705393]
     },
 
     {
         id: "karlova",
         nimi: "Karlova",
+        kategooria: "jalutus",
         koordinaadid: [58.371942, 26.731727]
     },
 
     {
         id: "moku",
         nimi: "Möku",
+        kategooria: "ohtu",
         koordinaadid: [58.38345985296545, 26.72211558376987]
     },
 
     {
         id: "kivi",
         nimi: "Kivi baar",
+        kategooria: "ohtu",
         koordinaadid: [58.38203884010296, 26.721549361391997]
     },
 
     {
         id: "seik",
         nimi: "Seik baar",
+        kategooria: "ohtu",
         koordinaadid: [58.38155764726224, 26.721546631165975]
     },
 
     {
         id: "gen",
         nimi: "Genialistide klubi",
+        kategooria: "ohtu",
         koordinaadid: [58.383475367765925, 26.721960195475074]
     },
 
     {
         id: "ula",
         nimi: "Ula baar",
+        kategooria: "ohtu",
         koordinaadid: [58.37779188967427, 26.714992263793537]
     },
 
     {
         id: "werner",
         nimi: "Werneri kohvik",
+        kategooria: "puhkus",
         koordinaadid: [58.38053518621302, 26.72096329020195]
     },
 
     {
         id: "kohvipaus",
         nimi: "Kohvipaus",
+        kategooria: "puhkus",
         koordinaadid: [58.38107152821488, 26.72179913244089]
     },
 
     {
         id: "karlova-kohv",
         nimi: "Karlova kohv Raekoda",
+        kategooria: "puhkus",
         koordinaadid: [58.379751746657305, 26.722002058317624]
     },
 
     {
         id: "karlova-kohv",
         nimi: "Karlova kohv",
+        kategooria: "puhkus",
         koordinaadid: [58.366646, 26.729511]
     },
 
     {
         id: "cruffin",
         nimi: "Cruffin Raekoda",
+        kategooria: "puhkus",
         koordinaadid: [58.38026248768847, 26.722137886969378]
     },
     
     {
         id: "cruffin",
         nimi: "Cruffin Aparaaditehas",
+        kategooria: "puhkus",
         koordinaadid: [58.370768, 26.715998]
     },
 
     {
         id: "gustav",
         nimi: "Gustav Cafe",
+        kategooria: "puhkus",
         koordinaadid: [58.37784996943192, 26.726658669035672]
     },
 
     {
         id: "reval",
         nimi: "Reval Cafe",
+        kategooria: "puhkus",
         koordinaadid: [58.37680510916691, 26.72746318517415]
     },
 
     {
         id: "mandel",
         nimi: "Mandli koogipood",
+        kategooria: "puhkus",
         koordinaadid: [58.38210564480205, 26.709446439067072]
     },
 
     {
         id: "piro",
         nimi: "Pirogovi park",
+        kategooria: "muu",
         koordinaadid: [58.37994843551232, 26.72072599986768]
     },
 
     {
         id: "aparaat",
         nimi: "Aparaaditehas",
+        kategooria: "muu",
         koordinaadid: [58.370479033971954, 26.71611745929899]
     },
 
     {
         id: "delta",
         nimi: "Delta õppehoone",
+        kategooria: "muu",
         koordinaadid: [58.38524596325133, 26.725555477990362]
     },
 
     {
         id: "elektriteater",
         nimi: "Elektriteater",
+        kategooria: "muu",
         koordinaadid: [58.380990307900134, 26.719127839990737]
     },
 
@@ -159,65 +183,91 @@ const kohad = [
     {
         id: "erm",
         nimi: "Eesti Rahva Muuseum",
+        kategooria: "muu",
         koordinaadid: [58.39518829504244, 26.744127631055157]
     },
 
     {
         id: "raamatukogu",
         nimi: "Tartu Ülikooli raamatukogu",
+        kategooria: "muu",
         koordinaadid: [58.37671534054486, 26.720609276484144]
     },
 
     {
         id: "humana",
         nimi: "Humana",
+        kategooria: "taaskasutus",
         koordinaadid: [58.376120224484936, 26.711792219770558]
     },
 
     {
         id: "humana",
         nimi: "Vintage Humana",
+        kategooria: "taaskasutus",
         koordinaadid: [58.380940, 26.723985]
     },
 
     {
         id: "sarapuu",
         nimi: "Sarapuu kirbukas",
+        kategooria: "taaskasutus",
         koordinaadid: [58.386445084881395, 26.73618180917367]
     },
 
     {
         id: "sobraltsobralej",
         nimi: "Sõbralt sõbrale Annelinn",
+        kategooria: "taaskasutus",
         koordinaadid: [58.369331395379646, 26.76543217327981]
     },
 
     {
         id: "sobraltsobralej",
         nimi: "Sõbralt sõbrale Jõe",
+        kategooria: "taaskasutus",
         koordinaadid: [58.36556776535495, 26.744318126286693]
     },
     
     {
         id: "uuskasutuskeskus",
         nimi: "Uuskasutuskeskus kesklinn",
+        kategooria: "taaskasutus",
         koordinaadid: [58.374146, 26.722220]
     },
 
     {
         id: "uuskasutuskeskus",
         nimi: "Uuskasutuskeskus Annelinn",
+        kategooria: "taaskasutus",
         koordinaadid: [58.372091, 26.762427]
     },
 ];
 
 const markerid = {};
 
-// igale kohale marker
-kohad.forEach(function (koht) {
+// kategooriate värvid
+const kategooriaVärvid = {
+    jalutus: "#c72f88",
+    ohtu: "#a044bd",
+    puhkus: "#e48329",
+    muu: "#3e7fd4",
+    taaskasutus: "#27ad27"
+};
 
-    // loob markeri, lisab, allikas: https://leafletjs.com/examples-v1/quick-start/
-    const marker = L.marker(koht.koordinaadid).addTo(map);
+
+// igale kohale värviline marker
+kohad.forEach(function (koht) {
+    // võtab kategooriale vastava värvi
+    const värv = kategooriaVärvid[koht.kategooria];
+    // loob markeri
+    const marker = L.circleMarker(koht.koordinaadid, {
+        radius: 9,
+        color: värv,
+        fillColor: värv,
+        fillOpacity: 0.95,
+        weight: 2
+    }).addTo(map);
 
     // markeri hüpikaken, https://leafletjs.com/reference#popup
     marker.bindPopup(`

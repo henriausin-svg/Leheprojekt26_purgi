@@ -13,6 +13,12 @@
     background: linear-gradient(135deg, #fffaff, #f7f1fa, #e9f7ee);
 }
 
+.map-intro h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: var(--color-purple);
+}
+
 .map-subtitle {
     color: hsl(271, 83%, 58%);
     font-weight: bold;
@@ -35,9 +41,12 @@
     margin-top: 40px;
 }
 
-.map-section h2 {
-    font-size: 27px;
-    margin-bottom: 15px;
+.map-section h2,
+.map-instructions h2 {
+    color: var(--color-purple);
+    font-family: var(--font-heading);
+    font-size: clamp(36px, 3.5vw, 42px);
+    margin-bottom: 20px;
 }
 
 /* leafleti kaart */
@@ -65,9 +74,6 @@
     border-radius: 20px;
 }
 
-.map-instructions h2 {
-    font-size: 25px;
-}
 
 .map-instructions li {
     font-size: 16px;
@@ -85,4 +91,41 @@
     border-radius: 20px;
     border: 1px solid #eadcf0;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.markeri-legend {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eadcf0;
+}
+
+.markeri-legend li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.legend-jalutus {
+    color: #c72f88;
+    font-weight: bold;
+}
+
+.legend-ohtu {
+    color: #a044bd;
+    font-weight: bold;
+}
+
+.legend-puhkus {
+    color: #e48329;
+    font-weight: bold;
+}
+
+.legend-muu {
+    color: #3e7fd4;
+    font-weight: bold;
+}
+
+.legend-taaskasutus {
+    color: #27ad27;
+    font-weight: bold;
 }

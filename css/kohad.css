@@ -6,11 +6,20 @@
 
 .lehe-intro {
     margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        #fffaff,
+        #f7f1fa,
+        #e9f7ee
+    );
 }
 
 .lehe-intro h1 {
     font-size: 38px;
     margin-bottom: 15px;
+    color: var(--color-purple);
 }
 
 .lehe-intro p {
@@ -121,14 +130,6 @@
     margin-top: 5px;
 }
 
-.lehe-jalus {
-    text-align: center;
-    padding: 25px;
-    margin-top: 30px;
-    color: #666666;
-    border-top: 1px solid #d8c5e1;
-}
-
 /* peidab otsingus mitte sobivad kohad */
 .tulp li[hidden] {
     display: none;
@@ -137,4 +138,24 @@
 .koha-link::after {
     content: " ↗";
     font-size: 14px;
+}
+
+.kategooria-jalutus {
+    color: #c72f88;
+}
+
+.kategooria-ohtu {
+    color: #a044bd;
+}
+
+.kategooria-puhkus {
+    color: #e48329;
+}
+
+.kategooria-muu {
+    color: #3e7fd4;
+}
+
+.kategooria-taaskasutus {
+    color: #27ad27;
 }
